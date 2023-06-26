@@ -1,7 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faMailReply,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import "./index.scss";
 import LogoS from "../../assets/images/logo-s.png";
 import LogoSubtitle from "../../assets/images/logo_sub.png";
@@ -44,6 +53,24 @@ const Sidebar = () => {
             href="https://www.linkedin.com/in/thajanaz/"
           >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
+
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://github.com/tjnaz">
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+
+        <li>
+          <a target="_blank" rel="noreferrer" href="twitter.com/tjnaz">
+            <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
+          </a>
+        </li>
+
+        <li>
+          <a target="_blank" rel="noreferrer" href="mailto:anaz.thaj@gmail.com">
+            <FontAwesomeIcon icon={faMailReply} color="#4d4d4e" />
           </a>
         </li>
       </ul>
