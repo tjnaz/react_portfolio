@@ -63,7 +63,11 @@ const Sidebar = () => {
         </li>
 
         <li>
-          <a target="_blank" rel="noreferrer" href="twitter.com/tjnaz">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/thajanaz"
+          >
             <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
           </a>
         </li>
