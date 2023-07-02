@@ -1,4 +1,4 @@
-import React from "react";
+import "./index.scss";
 
 const Outlet = () => {
   return <div>Outlet</div>;
