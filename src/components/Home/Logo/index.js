@@ -16,6 +16,12 @@ const Logo = () => {
       duration: 1,
       opacity: 1,
     });
+
+    gsap.fromTo(
+      solidLogoRef.current,
+      { opacity: 0 },
+      { opacity: 1, delay: 4, duration: 4 }
+    );
   }, []);
 
   return (
