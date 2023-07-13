@@ -12,6 +12,8 @@ import {
   CircularText,
   LinkArrow,
 } from "./Icons";
+import { motion } from "framer-motion";
+
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
 
@@ -39,16 +41,36 @@ const NavBar = () => {
         <CustomLink href="/articles" title="Articles" className="mr-4" />
       </nav>
 
-      <nav>
-        <Link href="/" target={"_blank"}>
+      <nav className="flex items-center justify-center flex-wrap">
+        <motion.a
+          href="https://github.com/tjnaz"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          className="w-6 mr-3"
+          whileTap={{ scale: 0.9 }}
+        >
           <GithubIcon />
-        </Link>
-        <Link href="/" target={"_blank"}>
+        </motion.a>
+
+        <motion.a
+          href="https://twitter.com/thajanaz"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          className="w-6 mx-3"
+          whileTap={{ scale: 0.9 }}
+        >
           <TwitterIcon />
-        </Link>
-        <Link href="/" target={"_blank"}>
+        </motion.a>
+
+        <motion.a
+          href="https://www.linkedin.com/in/anaz-thaj/"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          className="w-6 ml-3"
+          whileTap={{ scale: 0.9 }}
+        >
           <LinkedInIcon />
-        </Link>
+        </motion.a>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
