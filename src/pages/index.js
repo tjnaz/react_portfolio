@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import profilePic from "../../public/images/profile/profile_pic.png";
+import AnimatedText from "../components/AnimatedText";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
               <Image src={profilePic} alt="TJ" className="w-full h-auto" />
             </div>
             <div className="w-1/2">
-              <h1>Turning Vision Into Reality With Code And Design.</h1>
+              <AnimatedText text="Turning Vision Into Reality With Code And Design." />
               <p>
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
