@@ -115,6 +115,3 @@ Build A Fabulous Todo List App With React, Redux And Framer-Motion
 Redux Simplified: A Beginner's Guide For Web Developers
 
 What Is Higher Order Component (Hoc) In React?
-
-
-
