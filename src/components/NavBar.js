@@ -12,8 +12,6 @@ const NavBar = () => {
         <Link href="/articles">Articles</Link>
       </nav>
 
-      <Logo />
-
       <nav>
         <Link href="/" target={"_blank"}>
           T
@@ -34,6 +32,9 @@ const NavBar = () => {
           T
         </Link>
       </nav>
+      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
+        <Logo />
+      </div>
     </header>
   );
 };
