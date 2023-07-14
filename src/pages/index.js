@@ -4,6 +4,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import profilePic from "../../public/images/profile/profile_pic-removebg-preview.png";
 import AnimatedText from "../components/AnimatedText";
+import { LinkArrow } from "../components/Icons";
 
 export default function Home() {
   return (
@@ -31,13 +32,15 @@ export default function Home() {
                 projects and articles, showcasing my expertise in React.js and
                 web development.
               </p>
-              <div>
+              <div className="flex items-center self-start mt-2">
                 <Link
                   href="/thaj_anaz-daraz-05-23.pdf"
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  dowload={true}
                 >
                   Resume
+                  <LinkArrow className="w-6 ml-1" />
                 </Link>
                 <Link href="mailto:anaz.thaj@gmail.com">Email</Link>
               </div>
