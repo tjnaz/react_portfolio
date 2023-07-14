@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/Layout";
-import profilePic from "../../public/images/profile/profile_pic.png";
+import profilePic from "../../public/images/profile/profile_pic-removebg-preview.png";
 import AnimatedText from "../components/AnimatedText";
 
 export default function Home() {
@@ -32,7 +32,11 @@ export default function Home() {
                 web development.
               </p>
               <div>
-                <Link href="/thaj_anaz-daraz-05-23.pdf" target={"_blank"}>
+                <Link
+                  href="/thaj_anaz-daraz-05-23.pdf"
+                  target={"_blank"}
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark"
+                >
                   Resume
                 </Link>
                 <Link href="mailto:anaz.thaj@gmail.com">Email</Link>
