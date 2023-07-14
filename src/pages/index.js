@@ -24,7 +24,7 @@ export default function Home() {
                 text="Turning Vision Into Reality With Code And Design."
                 className="!text-6xl text-left"
               />
-              <p>
+              <p className="my-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in React.js and
