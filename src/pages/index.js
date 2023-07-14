@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Layout from "../components/Layout";
 import profilePic from "../../public/images/profile/profile_pic.png";
 import AnimatedText from "../components/AnimatedText";
@@ -30,6 +31,12 @@ export default function Home() {
                 projects and articles, showcasing my expertise in React.js and
                 web development.
               </p>
+              <div>
+                <Link href="/thaj_anaz-daraz-05-23.pdf" target={"_blank"}>
+                  Resume
+                </Link>
+                <Link href="mailto:anaz.thaj@gmail.com">Email</Link>
+              </div>
             </div>
           </div>
         </Layout>
