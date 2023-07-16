@@ -37,7 +37,7 @@ export default function Home() {
                   href="/thaj_anaz-daraz-05-23.pdf"
                   target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
-                  dowload={true}
+                  download={true}
                 >
                   Resume
                   <LinkArrow className="w-6 ml-1" />
