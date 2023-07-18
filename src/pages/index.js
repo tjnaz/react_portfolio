@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/Layout";
 import profilePic from "../../public/images/profile/profile_pic-removebg-preview.png";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import AnimatedText from "../components/AnimatedText";
 import { LinkArrow } from "../components/Icons";
 import HireMe from "../components/HireMe";
@@ -53,6 +54,9 @@ export default function Home() {
             </div>
           </div>
           <HireMe />
+          <div className="absolute right-8 bottom-8 inline-block w-24">
+            <Image src={lightBulb} alt="TJ" className="w-full h-auto" />
+          </div>
         </Layout>
       </main>
     </>
