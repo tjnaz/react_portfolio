@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Image from 'next/image'
 import AnimatedText from "../components/AnimatedText";
 import Layout from "../components/Layout";
 
@@ -37,6 +38,9 @@ const about = () => {
                 forward to the opportunity to bring my skills and passion to
                 your next project.
               </p>
+            </div>
+            <div>
+              <Image src={} alt='proflile image' className='w-full h-auto rounded-2xl' />
             </div>
           </div>
         </Layout>
