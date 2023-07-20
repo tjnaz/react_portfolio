@@ -1,8 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import Image from 'next/image'
+import Image from "next/image";
 import AnimatedText from "../components/AnimatedText";
 import Layout from "../components/Layout";
+import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 
 const about = () => {
   return (
@@ -39,8 +40,13 @@ const about = () => {
                 your next project.
               </p>
             </div>
-            <div>
-              <Image src={} alt='proflile image' className='w-full h-auto rounded-2xl' />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+              <Image
+                src={profilePic}
+                alt="proflile image"
+                className="w-full h-auto rounded-2xl"
+              />
             </div>
           </div>
         </Layout>
