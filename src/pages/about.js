@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import { useMotionValue, useSpring, useInView } from "framer-motion";
 import AnimatedText from "../components/AnimatedText";
 import Layout from "../components/Layout";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+
+const AnimatedNumbers = ({ value }) => {
+  const ref = useRef(null);
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, { duration: 3000 });
+  const isInView = useInView({ ref });
+
+  return <span ref={ref}></span>;
+};
 
 const about = () => {
   return (
